@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ndcharles Nweke Data Portfolio</title>
+
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+	<link rel="icon"  href="../images/favicon.ico"/>
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+
+        <img align="middle" src="../images/logo.png" alt="Logo" />
+
+        <h1><a href="../index.html">Ndcharles Nweke</a></h1>
+        <p>Data Scientist | Teacher | Growth Marketing <br><br>
+
+    An engineering graduate who is now in data science/ML. An awesome journey so far🙌. My interests are in real-life applications of data science/ML to business to tackle every day problems. <br><br>
+    Let's Connect<br>
+    <a href="https://linkedin.com/in/nndcharles">LinkedIn</a> | <a href="https://twitter.com/nndcharles">Twitter</a> | <a href="https://ndcharles.github.io">Blog</a> | 
+    <a href="https://drive.google.com/file/d/1K_CintIw3UXhQ-qg75Jtv5SZaQnoP0RF/view?usp=sharing">View my Resume</a><br>
+    
+		</p>
+      </header>
+
+
+   <section>
+     <h1>Loan Prediction</h1>
+<hr>
+<p>There are a lot of factors that affect one's ability to get a loan from a financial institution. Such factors inlude income, employment status, loan amount, loan amount term, credit history and more. Some of these attributes are crucial, while others are not. The output performance was reasonably good for AdaBoost Classifier than the others. Further analysis was also made to improve on the accuracy of the model by adding more variables and an attempt at hyperparameter tuning.</p>
+
+<h2>Method</h2>
+
+<p>A dataset consisting of 614 samples (and 13 attributes of loans) granted by XYZ, with the full set of information about the borrower, the history of payments and the outcome of the loan – received or denied – was provided. EDA was done to take a closer look at the dataset. There were missing values and no outliers. Columns with missing values >= 10 were dropped. The rest were filled using mode (categorical) and mean (numerical). Categorical values were label encoded. Loan status (Yes or No) was converted to numerical (1 or 0).</p> 
+
+<img src="../images/loan.png" alt="loan"/>
+
+<p>Given it's a classification problem, various classification algorithms (LogisticRegression, DecisionTreeClassifier, RandomForestClassifier and AdaBoostClassifier) were used to create a model using the relevants attributes to predict the outcome – given or not given.</p> 
+
+<a href="https://github.com/ndcharles/SGA08_DATASCI/blob/master/loan_project/loan_project.ipynb">[View project on GitHub]</a>
+
+<br><br>
+
+<h2>Discussions</h2>
+
+<p>Our first prediction used income fields, loan amount, loan term and credit history fields to train our model. The results of the models are given below:</p>
+
+<img src="../images/loan1.png" alt="loan1"/>
+
+<p>Addition of other variables improved the results, with AdaBoostClassifier giving the best performance. Using the AdaBoostClassifier alone, to predict gave the below KDE plot and metrics. However, from the KDE output, there is the need to balance the prediction to reduce the variation between the actual and predicted values.</p>
+
+<img src="../images/loan2.png" alt="loan2"/>
+
+<br><br>
+<p><a href="../index.html">[Back to Portfolio]</a></p> 
+<hr>
+<a href="https://www.github.com/ndcharles">[View my GitHub profile]</a> | <a href="https://www.ndcharles.github.io">[Read the Blog]</a>
+
+      </section>
+      <footer></footer>
+    </div>
+    <script src="../assets/scale.fix.js"></script>
+  </body>
+</html>
